@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+    <!-- HANDSONTABLE CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/show_parsed.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
+
+
+    <title>Parsed CSV</title>
+</head>
+
+<body>
+
+    <!-- Loading gif -->
+    <article class="loading">
+        <img src="../images/loading.gif" alt="">
+    </article>
+    <main>
+        <input id="search_field" type="search" placeholder="Search in table" />
+        <div class="container">
+            <!-- Dynamically inserted table -->
+        </div>
+    </main>
+
+
+
+    <!-- AXIOS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- HANDSONTABLE JS CDN -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script type="module" src="../js/file_parsing_display/index.js"></script>
+    <script type="module" src="../js/file_parsing_display/display_parsed_data.js"></script>
+</body>
+
+</html>
